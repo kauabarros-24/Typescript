@@ -27,7 +27,6 @@ function validacao(firstname, lastName) {
     }
 }
 validacao(ame, lastame);
-validacao(ame);
 //Union Type
 function showBalance(balance) {
     console.log("O balanço é de " + balance);

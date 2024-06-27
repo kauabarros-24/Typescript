@@ -30,7 +30,6 @@ function validacao(firstname: string, lastName: string) {
 }
 
 validacao(ame, lastame)
-validacao(ame)
 
 //Union Type
 function showBalance(balance: string  | number ) {
