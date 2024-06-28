@@ -96,7 +96,7 @@ interface Gun {
 
 type HumanWithGun = Human & Gun
 
-var people:HumanWithGun = {
+const people:HumanWithGun = {
     name: "Arnold",
     age: 66,
     type: "5.56 ahgr",
@@ -104,3 +104,38 @@ var people:HumanWithGun = {
 
 }
 
+console.log(people)
+
+//Read only arrays
+let array : ReadonlyArray<string>= ["1", "2", "3"]
+
+console.log(array)
+array.forEach((item) => {
+    console.log("Fruta" + item)
+})
+
+array = array.map((item) => {
+    return `Fruta: ${item}`
+})
+
+console.log(array)
+
+//Tuplas
+type fiveNumbers = [number, number, number, number, number]
+
+const MyNumberArray: fiveNumbers = [1, 2, 3, 4, 5,]
+console.log(MyNumberArray)
+
+type nameAndAge = [number, string]
+
+const nameAge: nameAndAge = [16, "Kaua"]
+
+console.log(nameAge)
+
+//Number com readOnly
+function showNumber(numbers: readonly [number, number]) {
+    console.log(numbers[0], numbers[1])
+
+}
+
+showNumber([1,2])

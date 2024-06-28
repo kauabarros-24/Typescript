@@ -43,9 +43,29 @@ const SuperAutista = {
 };
 console.log(SuperAutista);
 console.log(kaua);
-var people = {
+const people = {
     name: "Arnold",
     age: 66,
     type: "5.56 ahgr",
     caliber: 5.56
 };
+console.log(people);
+//Read only arrays
+let array = ["1", "2", "3"];
+console.log(array);
+array.forEach((item) => {
+    console.log("Fruta" + item);
+});
+array = array.map((item) => {
+    return `Fruta: ${item}`;
+});
+console.log(array);
+const MyNumberArray = [1, 2, 3, 4, 5,];
+console.log(MyNumberArray);
+const nameAge = [16, "Kaua"];
+console.log(nameAge);
+//Number com readOnly
+function showNumber(numbers) {
+    console.log(numbers[0], numbers[1]);
+}
+showNumber([1, 2]);
