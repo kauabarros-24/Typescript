@@ -11,3 +11,13 @@ const camisa = {
 };
 showDetails(camisa);
 showDetails({ name: "camisa", price: 19.9, isAvaliable: true });
+function showUserDetails(user) {
+    console.log(`O usuário tem o email ${user.email}`);
+    if (user.role)
+        console.log(`A função do usuário é: ${user.role}`);
+}
+const user1 = {
+    email: "matheus.com",
+    role: "Admin"
+};
+showUserDetails(user1);
