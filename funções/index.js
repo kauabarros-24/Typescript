@@ -52,3 +52,36 @@ function mergeArrays(objx, objy) {
     return objx.concat(objy);
 }
 console.log(mergeArrays([1, 2], [1, 2, "A"]));
+//Default
+function somaDefault(n, m = 10) {
+    return n + m;
+}
+console.log(somaDefault(10));
+console.log(somaDefault(10, 16));
+//Unknow
+function x(m) {
+    if (Array.isArray(m))
+        console.log(m[0]);
+    else if (typeof m === "number")
+        console.log("M é um número");
+    else
+        console.log("Não é nada");
+}
+x([1, 2, 3]);
+x(1);
+x("A");
+//Never
+function showErrorMessage(msg) {
+    throw new Error(msg);
+}
+//Rest operators
+function sumALL(...n) {
+    return n.reduce((number, sum) => sum + number);
+}
+console.log(sumALL(1, 2, 3, 4, 5));
+//
+function showProductions({ name, price }) {
+    return `O nome do produto é ${name} e o preço é R$ ${price}`;
+}
+const shirt = { name: "camisa", "price": 99.99 };
+console.log(showProductions(shirt));
