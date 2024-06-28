@@ -28,3 +28,27 @@ function mergeObject(obj1, obj2) {
 }
 const newObject = mergeObject({ name: "Kaua" }, { age: 16, job: "CEO | PROGRAMMER" });
 console.log(newObject);
+//Constraints
+function bigNumber(a, b) {
+    let grande;
+    if (+a > +b)
+        grande = a;
+    else
+        grande = b;
+    return grande;
+}
+console.log(bigNumber(1, 2));
+console.log(bigNumber("10", "110"));
+//Parâmetros opcionais
+function choice(name, greet) {
+    if (greet)
+        return `Olá ${greet} ${name}`;
+    return `Olá ${name}`;
+}
+console.log(choice("Kaua", "Doutor"));
+console.log(choice("Kaua"));
+//Tipo de parâmetros
+function mergeArrays(objx, objy) {
+    return objx.concat(objy);
+}
+console.log(mergeArrays([1, 2], [1, 2, "A"]));
