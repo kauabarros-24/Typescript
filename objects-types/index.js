@@ -31,4 +31,21 @@ let coord = {
 };
 console.log(coord.x);
 coord.y = 15;
-console.log(coord.y);
+console.log(coord);
+const kaua = {
+    name: "Kaua",
+    age: 30
+};
+const SuperAutista = {
+    name: "Osvaldo",
+    age: 25,
+    superPowers: ["hiperfoco", "nerdice", "hard skills"]
+};
+console.log(SuperAutista);
+console.log(kaua);
+var people = {
+    name: "Arnold",
+    age: 66,
+    type: "5.56 ahgr",
+    caliber: 5.56
+};

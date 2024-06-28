@@ -61,5 +61,46 @@ let coord: CoorObject = {
 console.log(coord.x)
 coord.y = 15
 
-console.log(coord.y)
+console.log(coord)
+
+//Extend types
+interface Human {
+    name: string
+    age: number
+}
+
+interface SuperHuman extends Human{
+    superPowers: string[]
+}
+
+const kaua: Human = {
+    name: "Kaua",
+    age: 30
+}
+
+const SuperAutista: SuperHuman = {
+    name: "Osvaldo",
+    age: 25,
+    superPowers: ["hiperfoco", "nerdice", "hard skills"]
+}
+
+console.log(SuperAutista)
+console.log(kaua)
+
+//Intersection types
+
+interface Gun {
+    type: string
+    caliber: number
+}
+
+type HumanWithGun = Human & Gun
+
+var people:HumanWithGun = {
+    name: "Arnold",
+    age: 66,
+    type: "5.56 ahgr",
+    caliber: 5.56
+
+}
 
