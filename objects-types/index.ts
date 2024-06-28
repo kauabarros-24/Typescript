@@ -35,3 +35,31 @@ const user1: User = {
 }
 
 showUserDetails(user1)
+
+//Propriedades read_only
+interface Car {
+    brand: string
+    readonly wheels: number
+
+
+}
+const fusca:Car = {
+    brand: 'VW',
+    wheels: 4,
+}
+console.log(fusca)
+
+//Index signature
+
+interface CoorObject {
+    [index: string]: number
+}
+
+let coord: CoorObject = {
+    x: 10
+}
+console.log(coord.x)
+coord.y = 15
+
+console.log(coord.y)
+

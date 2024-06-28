@@ -21,3 +21,14 @@ const user1 = {
     role: "Admin"
 };
 showUserDetails(user1);
+const fusca = {
+    brand: 'VW',
+    wheels: 4,
+};
+console.log(fusca);
+let coord = {
+    x: 10
+};
+console.log(coord.x);
+coord.y = 15;
+console.log(coord.y);
